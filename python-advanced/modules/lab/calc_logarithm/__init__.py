@@ -1,0 +1,1 @@
+from lab.calc_logarithm.log import calc_log

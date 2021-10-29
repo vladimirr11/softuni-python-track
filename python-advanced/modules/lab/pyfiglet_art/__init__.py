@@ -1,0 +1,1 @@
+from lab.pyfiglet_art.ascii_art_with_pyfiglet import print_art
