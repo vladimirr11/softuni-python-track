@@ -17,6 +17,5 @@ while num != 'stop':
 
     num = input()
 
-
 print(f'Sum of all prime numbers is: {prime_num}')
 print(f'Sum of all non prime numbers is: {non_prime_num}')
