@@ -13,7 +13,6 @@ for i in range(1, age + 1):
     else:
         num_toys += sum_toys
 
-
 saved_money = saved_money_birthday + num_toys
 
 if saved_money >= washing_machine_price:

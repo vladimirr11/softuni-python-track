@@ -5,7 +5,7 @@ smallest_num = 0
 
 for i in range(num):
     random_num = int(input())
-    if i == 0:                        
+    if i == 0:
         biggest_num = random_num
         smallest_num = random_num
     else:

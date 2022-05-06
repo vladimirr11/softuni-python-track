@@ -1,5 +1,5 @@
-#  program that consecutively read 2n numbers (2 left and 2 right)
-#  and compare them
+# program that consecutively read 2n numbers (2 left and 2 right) 
+# and compare them
 
 num = int(input())
 
