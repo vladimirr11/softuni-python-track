@@ -1,6 +1,6 @@
 number_of_lines = int(input())
 
-total_sum = 0 
+total_sum = 0
 
 for line in range(number_of_lines):
     letter = input()

@@ -14,6 +14,5 @@ for line in range(number_of_lines):
         total_liters_in_the_tank -= quantity
 
     CAPACITY -= quantity
-    
 
 print(total_liters_in_the_tank)
