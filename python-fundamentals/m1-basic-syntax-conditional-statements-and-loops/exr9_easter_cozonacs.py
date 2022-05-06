@@ -18,6 +18,5 @@ while budget > 0:
         colored_eggs -= cozonacs - 2
     if budget < money_needed_for_cozonac:
         break
-    
 
 print(f'You made {cozonacs} cozonacs! Now you have {colored_eggs} eggs and {budget:.2f}BGN left.')
