@@ -2,7 +2,7 @@ num_tables = int(input())
 length_tables = float(input())
 width = float(input())
 
-area_tablecloth = num_tables * (length_tables +2 * 0.30) * (width + 2 * 0.30)
+area_tablecloth = num_tables * (length_tables + 2 * 0.30) * (width + 2 * 0.30)
 area_square = num_tables * (length_tables / 2) * (length_tables / 2)
 
 price_in_usd = (area_tablecloth * 7) + (area_square * 9)

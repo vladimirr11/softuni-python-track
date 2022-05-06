@@ -1,7 +1,7 @@
 price_whiskey = float(input())
 litters_beer = float(input())
 litters_wine = float(input())
-litters_rakia= float(input())
+litters_rakia = float(input())
 litters_whiskey = float(input())
 
 price_rakia = price_whiskey / 2

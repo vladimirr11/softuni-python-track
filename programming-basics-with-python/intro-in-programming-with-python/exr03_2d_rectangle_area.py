@@ -9,5 +9,5 @@ width = abs(y1 - y2)
 area = length * width
 perimeter = 2 * length + 2 * width
 
-print (f'{area:.2f}')
-print (f'{perimeter:.2f}')
+print(f'{area:.2f}')
+print(f'{perimeter:.2f}')
