@@ -18,4 +18,5 @@ while cake_size > total_pieces:
 if condition:
     print(f'{cake_size - total_pieces} pieces are left.')
 else:
-    print(f'No more cake left! You need {abs(cake_size - total_pieces)} pieces more.')
+    print(
+        f'No more cake left! You need {abs(cake_size - total_pieces)} pieces more.')
