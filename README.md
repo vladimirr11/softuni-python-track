@@ -1,1 +1,1 @@
-# softuni-python-track
+# SoftUni Python Track
