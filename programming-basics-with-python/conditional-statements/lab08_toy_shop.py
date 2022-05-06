@@ -5,7 +5,8 @@ teddy_bears = int(input())
 minion = int(input())
 lorries = int(input())
 
-total_sum_toys = (puzzles * 2.6) + (speaking_dolls * 3) + (teddy_bears * 4.10) + (minion * 8.20) + (lorries * 2)
+total_sum_toys = (puzzles * 2.6) + (speaking_dolls * 3) + \
+    (teddy_bears * 4.10) + (minion * 8.20) + (lorries * 2)
 
 num_toys = puzzles + speaking_dolls + teddy_bears + minion + lorries
 

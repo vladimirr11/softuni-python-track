@@ -4,7 +4,6 @@ figure = input()
 area = 0
 is_valid = True
 
-
 if figure == 'square':
     length_sq = float(input())
     area = length_sq * length_sq
@@ -22,7 +21,6 @@ elif figure == 'triangle':
 else:
     print('Not a correct figure!')
     is_valid = False
-
 
 if is_valid:
     print(f'{area:.3f}')

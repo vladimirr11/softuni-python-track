@@ -1,7 +1,6 @@
 hours = int(input())
 minutes = int(input())
 
-
 if hours <= 23 and minutes <= 44:
     print(f'{hours}:{minutes + 15}')
 elif hours < 23 and 44 < minutes < 55:
