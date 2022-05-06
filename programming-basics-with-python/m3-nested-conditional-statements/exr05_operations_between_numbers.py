@@ -34,7 +34,7 @@ elif symbol == '/':
     else:
         result = number1 / number2
         print(f'{number1} {symbol} {number2} = {result:.2f}')
-        
+
 elif symbol == '%':
     if number2 == 0:
         print(f'Cannot divide {number1} by zero')

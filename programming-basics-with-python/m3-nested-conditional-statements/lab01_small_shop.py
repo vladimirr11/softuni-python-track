@@ -36,5 +36,4 @@ elif product == 'sweets' and city == 'Varna':
 elif product == 'peanuts' and city == 'Varna':
     price = 1.55
 
-
 print(amount * price)

@@ -7,7 +7,6 @@ sum_without_disc = 0
 disc = 0
 end_sum = 0
 
-
 if num_days < 11:
     if service == 'room for one person':
         sum_without_disc = nights * 18

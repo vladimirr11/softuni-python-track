@@ -24,7 +24,7 @@ if minutes_arrival > minutes_exam:
 
 elif minutes_arrival == minutes_exam:
     print('On time')
-    
+
 elif minutes_exam > minutes_arrival:
     late = minutes_exam - minutes_arrival
     if late <= 30:
