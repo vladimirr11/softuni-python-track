@@ -16,5 +16,4 @@ for number in number_container:
     elif command == 'negative' and number < 0:
         filtered_container.append(number)
 
-
 print(filtered_container)

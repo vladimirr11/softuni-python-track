@@ -14,12 +14,12 @@ for pair in item_price_pairs:
         new_budget -= price
         new_price = price + price * ADDED_VALUE
         my_list.append(new_price)
-    
+
     if item_type == 'Shoes' and price <= 35. and new_budget >= price:
         new_budget -= price
         new_price = price + price * ADDED_VALUE
         my_list.append(new_price)
-    
+
     if item_type == 'Accessories' and price <= 20.5 and new_budget >= price:
         new_budget -= price
         new_price = price + price * ADDED_VALUE
@@ -27,9 +27,9 @@ for pair in item_price_pairs:
 
 
 for item in my_list:
-    print(f'{item:.2f}', end = ' ')
+    print(f'{item:.2f}', end=' ')
 
-profit = (budget - new_budget) * ADDED_VALUE 
+profit = (budget - new_budget) * ADDED_VALUE
 
 print()
 print(f'Profit: {profit:.2f}')

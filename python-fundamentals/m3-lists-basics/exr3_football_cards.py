@@ -16,7 +16,7 @@ for item in string:
         if len(team_a) < 7:
             HANDLE = True
             break
-    
+
     if team == 'B':
         if number not in team_b:
             continue
@@ -28,4 +28,4 @@ for item in string:
 print(f'Team A - {len(team_a)}; Team B - {len(team_b)}')
 
 if HANDLE == True:
-    print('Game was terminated') 
+    print('Game was terminated')

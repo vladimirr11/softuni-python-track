@@ -10,6 +10,5 @@ for _ in range(num):
     if searched_word in string:
         filtered_list.append(string)
 
-
 print(list_of_strings)
 print(filtered_list)

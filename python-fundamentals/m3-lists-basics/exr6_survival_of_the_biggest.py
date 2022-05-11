@@ -12,7 +12,4 @@ for i in range(count_of_numbers_to_remove):
 
     MIN_NUMBER = 48564804
 
-# for i in range(count_of_numbers_to_remove):
-#     string_of_intigers.remove(min(string_of_intigers))
-
 print(string_of_intigers)

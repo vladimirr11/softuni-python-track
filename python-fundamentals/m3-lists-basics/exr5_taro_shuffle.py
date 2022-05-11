@@ -13,5 +13,4 @@ for shuffle in range(num_shuffles):
 
     cards = result
 
-
 print(cards)

@@ -17,7 +17,7 @@ for event in events:
             initial_energy += number
             print(f'You gained {number} energy.')
             print(f'Current energy: {initial_energy}.')
-        
+
     elif event_ingredient == 'order':
         initial_energy -= 30
 
@@ -27,13 +27,12 @@ for event in events:
         if initial_energy < 0:
             initial_energy += 50
             print('You had to rest!')
-        
-        
+
     elif initial_coins >= 0:
         initial_coins -= number
         if initial_coins >= 0:
             print(f'You bought {event_ingredient}.')
-    
+
         if initial_coins < 0:
             print(f'Closed! Cannot afford {event_ingredient}.')
             HANDLE = True
