@@ -11,10 +11,10 @@ for item in collection_of_items.split('|'):
     if type_of_product == 'Clothes' and price_of_product > 50.0:
         continue
     if type_of_product == 'Shoes' and price_of_product > 35.0:
-        continue    
+        continue
     if type_of_product == 'Accessories' and price_of_product > 20.5:
         continue
-    
+
     if budget > price_of_product:
         budget -= price_of_product
         bought_products.append(price_of_product)
@@ -22,7 +22,7 @@ for item in collection_of_items.split('|'):
 
 
 for new_price in new_prices:
-    print(f'{new_price:.2f}', end = ' ')
+    print(f'{new_price:.2f}', end=' ')
 print('')
 
 profit = sum(new_prices) - sum(bought_products)

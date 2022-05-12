@@ -2,8 +2,6 @@ number = int(input())
 
 
 def make_loading_bar(number):
-    """
-    """
     time_loading_percents = number // 10
     pecrents = '%' * time_loading_percents
     points = '.' * ((100 - number) // 10)

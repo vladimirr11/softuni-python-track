@@ -4,7 +4,7 @@ while True:
     command = input().split()
     if command[0] == 'end':
         break
-    
+
     if command[0] == 'exchange':
         index = int(command[1])
 
@@ -14,15 +14,15 @@ while True:
             print(first_part + second_part)
         else:
             print('Invalid index')
-    
+
     if command[0] == 'max':
 
         if command[1] == 'even':
             max_even = -1
             for index, value in enumerate(array):
                 if value % 2 == 0 and value > max_even:
-                    max_even = index   
-            
+                    max_even = index
+
             if max_even < 0:
                 print('No matches')
             else:
@@ -38,7 +38,7 @@ while True:
                 print('No matches')
             else:
                 print(max_odd)
-    
+
     if command[0] == 'min':
 
         if command[1] == 'even':
@@ -52,7 +52,7 @@ while True:
                 print('No matches')
             else:
                 print(min_even)
-        
+
         if command[1] == 'odd':
             min_odd = 1001
 
@@ -64,11 +64,11 @@ while True:
                 print('No matches')
             else:
                 print(min_odd)
-    
+
     if command[0] == 'first' and command[2] == 'even':
         first_even = []
         counts = int(command[1])
-        
+
         for count in range(counts):
             for elem in array:
                 if elem % 2 == 0:
@@ -80,7 +80,7 @@ while True:
     if command[0] == 'first' and command[2] == 'odd':
         first_odd = []
         counts = int(command[1])
-        
+
         for count in range(counts):
             for elem in array:
                 if elem % 2 != 0:
@@ -88,9 +88,9 @@ while True:
                     break
 
         print(first_odd)
-    
+
     if command[0] == 'last' and command[2] == 'even':
-        last_even =[]
+        last_even = []
 
         counts = int(command[1])
 
@@ -106,7 +106,7 @@ while True:
             print(last_even[::-1])
 
     if command[0] == 'last' and command[2] == 'odd':
-        last_odd =[]
+        last_odd = []
 
         counts = int(command[1])
 
@@ -115,7 +115,7 @@ while True:
                 if elem % 2 != 0:
                     last_odd.append(elem)
                     break
-        
+
         if len(array) < counts:
             print('Invalid count')
         else:

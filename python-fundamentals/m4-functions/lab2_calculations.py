@@ -2,6 +2,7 @@ operator = input()
 int_one = int(input())
 int_two = int(input())
 
+
 def calculate(int_one, int_two, operator):
     result = None
 
@@ -13,7 +14,7 @@ def calculate(int_one, int_two, operator):
         result = int_one + int_two
     if operator == 'subtract':
         result = int_one - int_two
-    
+
     return result
 
 

@@ -16,7 +16,7 @@ def is_password_contain_two_digits(password: str):
     counter = 0
     for char in password:
         if char.isdigit():
-            counter += 1 
+            counter += 1
     if counter < 2:
         return 'Password must have at least 2 digits'
 
@@ -27,14 +27,14 @@ def password_validator(password: str):
         is_password_alpha_or_digit,
         is_password_contain_two_digits
     ]
-    
+
     validation_errors = []
 
     for validator in validators:
         result = validator(password)
         if result is not None:
             validation_errors.append(result)
-    
+
     if len(validation_errors) == 0:
         return 'Password is valid'
     else:

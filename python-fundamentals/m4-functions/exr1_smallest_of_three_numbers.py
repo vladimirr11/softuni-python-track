@@ -4,8 +4,6 @@ c = int(input())
 
 
 def get_smallest_of_three_numbers(num_one, num_two, num_three):
-    """
-    """
     if num_one < num_two and num_one < num_three:
         return num_one
     elif num_two < num_one and num_two < num_three:
