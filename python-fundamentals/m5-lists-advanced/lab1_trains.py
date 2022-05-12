@@ -6,7 +6,7 @@ while True:
     command = input()
     if command == 'End':
         break
-    
+
     tokens = command.split(' ')
     type_command = tokens[0]
 

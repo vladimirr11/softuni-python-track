@@ -9,10 +9,8 @@ for word in message:
         chars = str(chars[1])
         replaced_digits = chr(int(digits))
         word = replaced_digits + chars
-    
+
     word = ' '.join(word).split()
-    
     word[1], word[-1] = word[-1], word[1]
 
-
-    print(''.join(word), end = ' ')
+    print(''.join(word), end=' ')

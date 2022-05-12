@@ -17,7 +17,7 @@ while True:
 
         if item in collected_items:
             collected_items.remove(item)
-    
+
     if command[0] == 'Combine Items':
         old_item, new_item = command[1].split(':')
 
@@ -25,10 +25,10 @@ while True:
             for index, value in enumerate(collected_items):
                 if value == old_item:
                     collected_items.insert(index + 1, new_item)
-    
+
     if command[0] == 'Renew':
         item = command[1]
-        
+
         if item in collected_items:
             collected_items.remove(item)
             collected_items.append(item)
