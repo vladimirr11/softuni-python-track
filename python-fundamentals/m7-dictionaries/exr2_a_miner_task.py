@@ -5,7 +5,7 @@ while True:
     if resource == 'stop':
         break
     quantity = int(input())
- 
+
     if resource not in my_dict:
         my_dict[resource] = 0
 

@@ -11,7 +11,8 @@ for _ in range(number_of_commands):
         ticket_number = string_input[2]
 
         if user_name in registered_dict:
-            print(f'ERROR: already registered with plate number {registered_dict[user_name]}')
+            print(
+                f'ERROR: already registered with plate number {registered_dict[user_name]}')
             continue
 
         registered_dict[user_name] = ticket_number
@@ -24,6 +25,7 @@ for _ in range(number_of_commands):
 
         registered_dict.pop(user_name)
         print(f'{user_name} unregistered successfully')
+
 
 for k, v in registered_dict.items():
     print(f'{k} => {v}')

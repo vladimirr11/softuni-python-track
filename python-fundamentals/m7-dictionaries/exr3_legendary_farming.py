@@ -23,13 +23,14 @@ while winner == '':
 key_materials_dict[winner] -= 250
 
 winner_item_dict = {
-    'shards': 'Shadowmourne', 
-    'fragments': 'Valanyr', 
+    'shards': 'Shadowmourne',
+    'fragments': 'Valanyr',
     'motes': 'Dragonwrath'
 }
 
-sorted_key_materials = dict(sorted(key_materials_dict.items(), key = lambda x: (-x[1], x[0])))
-sorted_junk_materials = dict(sorted(junk_dict.items(), key = lambda x: x[0]))
+sorted_key_materials = dict(
+    sorted(key_materials_dict.items(), key=lambda x: (-x[1], x[0])))
+sorted_junk_materials = dict(sorted(junk_dict.items(), key=lambda x: x[0]))
 
 
 def print_dict(dictionary, template):

@@ -15,7 +15,7 @@ while True:
         else:
             my_dict[person_name][0] += health
             # my_dict[person_name][1] += energy
-        
+
     if command[0] == 'Attack':
         attacker = command[1]
         defender = command[2]
@@ -31,7 +31,7 @@ while True:
             if my_dict[attacker][1] <= 0:
                 print(f'{attacker} was disqualified!')
                 del my_dict[attacker]
-    
+
     if command[0] == 'Delete':
         username = command[1]
 
@@ -42,7 +42,7 @@ while True:
             my_dict.clear()
 
 
-sorted_dict = dict(sorted(my_dict.items(), key = lambda x: (-x[1][0], x[0])))
+sorted_dict = dict(sorted(my_dict.items(), key=lambda x: (-x[1][0], x[0])))
 
 print(f'People count: {len(sorted_dict)}')
 for k, v in sorted_dict.items():
