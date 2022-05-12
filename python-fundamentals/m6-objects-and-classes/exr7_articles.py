@@ -3,7 +3,7 @@ class Article:
         self.title = title
         self.content = content
         self.author = author
-    
+
     def edit(self, new_content):
         self.content = new_content
 
@@ -17,10 +17,11 @@ class Article:
         return f'{self.title} - {self.content}: {self.author}'
 
 
-article = Article('some title', 'some content', 'some author')
+if __name__ == '__main__':
+    article = Article('some title', 'some content', 'some author')
 
-article.edit('new content')
-article.rename('new title')
-article.change_author('new author')
+    article.edit('new content')
+    article.rename('new title')
+    article.change_author('new author')
 
-print(article)
+    print(article)

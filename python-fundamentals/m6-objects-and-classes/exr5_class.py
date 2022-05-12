@@ -19,10 +19,11 @@ class Class:
             f'Average grade: {self.get_average_grade():.2f}.'
 
 
-a_class = Class('11B')
+if __name__ == '__main__':
+    a_class = Class('11B')
 
-a_class.add_student('Peter', 4.80)
-a_class.add_student('Georde', 6.00)
-a_class.add_student('Amy', 3.50)
+    a_class.add_student('Peter', 4.80)
+    a_class.add_student('Georde', 6.00)
+    a_class.add_student('Amy', 3.50)
 
-print(a_class)
+    print(a_class)

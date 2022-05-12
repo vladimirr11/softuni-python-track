@@ -6,7 +6,7 @@ class Zoo:
         self.mammals = []
         self.fishes = []
         self.birds = []
-    
+
     def add_animal(self, species, name):
         if species == 'mammal':
             self.mammals.append(name)
@@ -14,9 +14,9 @@ class Zoo:
             self.fishes.append(name)
         elif species == 'bird':
             self.birds.append(name)
-            
+
         self.__animals += 1
-    
+
     def get_info(self, species):
         zoo_name = self.name
 
@@ -26,7 +26,7 @@ class Zoo:
             species_names = self.fishes
         elif species == 'bird':
             species_names = self.birds
-        
+
         names = ', '.join(species_names)
 
         return f'{species} in {zoo_name}: {names}'
@@ -35,22 +35,23 @@ class Zoo:
         return f'Total animals: {self.__animals}'
 
 
-# read input name
-zoo_name = input()
+if __name__ == '__main__':
+    # read input name
+    zoo_name = input()
 
-# instantiate class Zoo
-zoo = Zoo(zoo_name)
+    # instantiate class Zoo
+    zoo = Zoo(zoo_name)
 
-# recieve number of animals
-num_animals = int(input())
+    # recieve number of animals
+    num_animals = int(input())
 
-# read the animals
-for animal in range(num_animals):
-    species, animal_name = input().split(' ')
-    zoo.add_animal(species, animal_name)
+    # read the animals
+    for animal in range(num_animals):
+        species, animal_name = input().split(' ')
+        zoo.add_animal(species, animal_name)
 
-# get the kind of the output species
-output_species = input()
+    # get the kind of the output species
+    output_species = input()
 
-print(zoo.get_info(output_species))
-print(zoo.get_total())
+    print(zoo.get_info(output_species))
+    print(zoo.get_total())

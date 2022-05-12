@@ -4,7 +4,7 @@ class Vehicle:
         self.model = model
         self.price = price
         self.owner = None
-    
+
     def buy(self, money, owner):
         if money < self.price:
             return 'Sorry, not enough money'
@@ -28,15 +28,16 @@ class Vehicle:
             return f'{self.model} {self.type} is on sale: {self.price}'
 
 
-vehicle_type = 'car'
-model = 'BMW'
-price = 30000
+if __name__ == '__main__':
+    vehicle_type = 'car'
+    model = 'BMW'
+    price = 30000
 
-vehicle = Vehicle(vehicle_type, model, price)
+    vehicle = Vehicle(vehicle_type, model, price)
 
-vehicle.buy(15000, 'Peter')
-vehicle.buy(35000, 'George')
+    vehicle.buy(15000, 'Peter')
+    vehicle.buy(35000, 'George')
 
-print(vehicle)
-vehicle.sell()
-print(vehicle)
+    print(vehicle)
+    vehicle.sell()
+    print(vehicle)

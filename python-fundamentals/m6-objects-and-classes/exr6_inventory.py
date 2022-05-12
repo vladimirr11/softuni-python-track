@@ -8,20 +8,21 @@ class Inventory:
             self.items.append(item)
         else:
             return 'not enough room in the inventory'
-    
+
     def get_capacity(self):
         return self.__capacity
-    
+
     def __repr__(self):
         return f'Items: {", ".join(self.items)}.\nCapacity left: ' \
-             f'{self.__capacity - len(self.items)}'
+            f'{self.__capacity - len(self.items)}'
 
 
-inventory = Inventory(2)
+if __name__ == '__main__':
+    inventory = Inventory(2)
 
-inventory.add_item('potion')
-inventory.add_item('sword')
-inventory.add_item('bottle')
+    inventory.add_item('potion')
+    inventory.add_item('sword')
+    inventory.add_item('bottle')
 
-print(inventory.get_capacity())
-print(inventory)
+    print(inventory.get_capacity())
+    print(inventory)
