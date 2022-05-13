@@ -8,12 +8,12 @@ while True:
     if command[0] == 'Add':
         value = int(command[1])
         sugar_cubes.append(value)
-    
+
     if command[0] == 'Remove':
         value = int(command[1])
         if value in sugar_cubes:
             sugar_cubes.remove(value)
-    
+
     if command[0] == 'Replace':
         value = int(command[1])
         replacement = int(command[2])
@@ -30,7 +30,6 @@ while True:
         value = int(command[1])
 
         sugar_cubes = [el for el in sugar_cubes if el >= value]
-
 
 sugar_cubes = list(map(str, sugar_cubes))
 print(' '.join(sugar_cubes))

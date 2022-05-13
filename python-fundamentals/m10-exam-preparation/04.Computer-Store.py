@@ -6,17 +6,13 @@ while True:
         break
 
     prices = float(order)
-
     if prices <= 0:
         print('Invalid price!')
-
     if prices > 0:
         total_price += prices
 
-
 tax = total_price * 0.2
 final_price = total_price + tax
-
 
 if total_price == 0:
     print('Invalid order!')

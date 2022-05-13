@@ -17,27 +17,26 @@ for el in left_array[::-1]:
             if el < entry_point_item and el > 0:
                 broken_items_left += el
 
-        if type_of_price_ratings == 'negative': 
+        if type_of_price_ratings == 'negative':
             if el < entry_point_item and el < 0:
                 broken_items_left += el
 
-        if type_of_price_ratings == 'all': 
+        if type_of_price_ratings == 'all':
             if el < entry_point_item:
                 broken_items_left += el
-
 
     if type_of_items == 'expensive':
         if type_of_price_ratings == 'positive':
             if el >= entry_point_item and el > 0:
                 broken_items_left += el
-    
-        if type_of_price_ratings == 'negative': 
-                if el >= entry_point_item and el < 0:
-                    broken_items_left += el
-        
-        if type_of_price_ratings == 'all': 
-                if el >= entry_point_item:
-                    broken_items_left += el
+
+        if type_of_price_ratings == 'negative':
+            if el >= entry_point_item and el < 0:
+                broken_items_left += el
+
+        if type_of_price_ratings == 'all':
+            if el >= entry_point_item:
+                broken_items_left += el
 
 
 for el in right_array:
@@ -46,25 +45,24 @@ for el in right_array:
             if el < entry_point_item and el > 0:
                 broken_items_right += el
 
-        if type_of_price_ratings == 'negative': 
+        if type_of_price_ratings == 'negative':
             if el < entry_point_item and el < 0:
                 broken_items_right += el
 
-        if type_of_price_ratings == 'all': 
+        if type_of_price_ratings == 'all':
             if el < entry_point_item:
                 broken_items_right += el
-
 
     if type_of_items == 'expensive':
         if type_of_price_ratings == 'positive':
             if el >= entry_point_item and el > 0:
                 broken_items_right += el
-    
-        if type_of_price_ratings == 'negative': 
+
+        if type_of_price_ratings == 'negative':
             if el >= entry_point_item and el < 0:
                 broken_items_right += el
-        
-        if type_of_price_ratings == 'all': 
+
+        if type_of_price_ratings == 'all':
             if el >= entry_point_item:
                 broken_items_right += el
 

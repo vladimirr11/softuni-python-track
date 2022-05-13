@@ -7,7 +7,6 @@ handle = True
 
 while True:
     command = input().split()
-
     if handle:
         moves += 1
 
@@ -21,7 +20,8 @@ while True:
         elem_to_remove = sequence[index_two]
         sequence.remove(elem_to_remove)
         sequence.remove(elem_to_remove)
-        print(f'Congrats! You have found matching elements - {elem_to_remove}!')
+        print(
+            f'Congrats! You have found matching elements - {elem_to_remove}!')
     else:
         if index_one == index_two or index_one < 0 or index_two < 0 or index_one > len(sequence) or index_two > len(sequence):
             if len(sequence) > 0:
@@ -36,7 +36,7 @@ while True:
                     print('Try again!')
 
     if len(sequence) == 0:
-        is_won = moves 
+        is_won = moves
         handle = False
         handle_two = True
         exit()
