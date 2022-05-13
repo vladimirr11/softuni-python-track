@@ -1,6 +1,3 @@
-# string_to_replace = input()
-# actual_string= input()
-
 def replace_all(string_to_replace, actual_string):
     """
     Replace all the occurrances of given string in another specified string.

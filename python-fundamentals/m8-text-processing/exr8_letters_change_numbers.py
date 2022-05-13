@@ -3,7 +3,6 @@ input_string = input().split()
 total_sum = 0
 
 for string in input_string:
-
     if string[0].isupper():
         index = 1
         digits = ''
@@ -26,7 +25,6 @@ for string in input_string:
             last_letter = ord(string[-1]) - 96
 
             total_sum += last_letter
-
 
     if string[0].islower():
         index = 1
