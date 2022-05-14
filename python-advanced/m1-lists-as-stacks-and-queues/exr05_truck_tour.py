@@ -1,8 +1,6 @@
 from collections import deque
 
-
 num_pumps = int(input())
-
 fuel = 0
 
 pumps = deque()
@@ -12,8 +10,6 @@ for _ in range(num_pumps):
 
 
 def get_petrol(num_pumps, pumps: deque, fuel):
-    """
-    """
     for i in range(num_pumps):
         is_valid = True
         fuel = 0
@@ -24,14 +20,14 @@ def get_petrol(num_pumps, pumps: deque, fuel):
 
             if fuel < 0:
                 is_valid = False
-                fuel = 0 
-                
+                fuel = 0
+
             pumps.append(current_pump)
-        
+
         if is_valid:
             print(i)
             break
-        
+
         pumps.append(pumps.popleft())
 
 

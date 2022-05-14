@@ -1,6 +1,5 @@
 from collections import deque
 
-
 robot_info = input().split(';')
 time = [int(x) for x in input().split(':')]
 
@@ -11,8 +10,6 @@ robot_dict = {}
 
 
 def next_second(h, m, s):
-    """
-    """
     s += 1
     if s == 60:
         m += 1
@@ -22,28 +19,23 @@ def next_second(h, m, s):
         m = 0
     if h == 24:
         h = 0
-    
+
     return h, m, s
 
 
-def get_processing_time(robot_info: list, available_robots: deque, 
-                        waiting_robots: deque, products: deque, 
+def get_processing_time(robot_info: list, available_robots: deque,
+                        waiting_robots: deque, products: deque,
                         robot_dict: dict, time: list):
-    """
-    """
-
     product = input()
     while product != 'End':
         products.append(product)
         product = input()
-
 
     for robot in robot_info:
         robot_name = robot.split('-')[0]
         robot_time = int(robot.split('-')[1])
         available_robots.append([robot_name, robot_time])
         robot_dict[robot_name] = robot_time
-
 
     while products:
         for robot in waiting_robots:
@@ -69,4 +61,5 @@ def get_processing_time(robot_info: list, available_robots: deque,
         waiting_robots.append(current_robot)
 
 
-get_processing_time(robot_info, available_robots, waiting_robots, products, robot_dict, time)
+get_processing_time(robot_info, available_robots,
+                    waiting_robots, products, robot_dict, time)

@@ -2,8 +2,6 @@ from collections import deque
 
 
 def rotate_hot_potato(people, tosses_count):
-    """
-    """
     people = deque(people)
 
     index = 0

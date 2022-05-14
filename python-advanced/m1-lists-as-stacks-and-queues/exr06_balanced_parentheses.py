@@ -16,9 +16,7 @@ for parenthesis in expression:
             balanced = False
             break
 
-
 if balanced and len(stack) == 0:
     print('YES')
 else:
     print('NO')
-        

@@ -1,6 +1,4 @@
 def get_order(food_quantity, quantity_of_an_order):
-    """
-    """
     food_amount = food_quantity
     queue = list(map(int, quantity_of_an_order.split()))
     

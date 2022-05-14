@@ -1,6 +1,5 @@
 from collections import deque
 
-
 duration_green_light = int(input())
 duration_free_window = int(input())
 
@@ -21,7 +20,7 @@ while True:
             if len(car) <= green_light:
                 traffic_counter += 1
                 green_light -= len(car)
-            else: 
+            else:
                 if green_light + free_window >= len(car):
                     traffic_counter += 1
                     break

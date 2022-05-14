@@ -1,9 +1,7 @@
 from collections import deque
 
-
 initial_quantity = int(input())
 people_queue = deque()
-
 
 while True:
     command = input()
@@ -11,7 +9,6 @@ while True:
         break
 
     people_queue.append(command)
-
 
 while True:
     command = input().split()

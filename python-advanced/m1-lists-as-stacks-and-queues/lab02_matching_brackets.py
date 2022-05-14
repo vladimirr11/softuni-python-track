@@ -1,6 +1,4 @@
 def match_brackets(expression):
-    """
-    """
     brackets_stack = []
     sub_expressions = []
 

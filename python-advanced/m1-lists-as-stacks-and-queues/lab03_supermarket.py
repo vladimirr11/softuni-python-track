@@ -2,8 +2,6 @@ from collections import deque
 
 
 def get_queue_lenght():
-    """
-    """
     people = deque()
 
     while True:
