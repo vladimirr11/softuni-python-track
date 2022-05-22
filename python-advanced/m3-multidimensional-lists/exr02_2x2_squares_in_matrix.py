@@ -1,8 +1,7 @@
 rows, columns = list(map(int, input().split()))
 
+
 def read_matrix(rows: int):
-    """
-    """
     matrix = []
     for _ in range(rows):
         entry_chars = [x for x in input().split()]
@@ -12,8 +11,6 @@ def read_matrix(rows: int):
 
 
 def look_for_2x2_squares_of_equal_chars_in_matrix(matrix, rows, cols):
-    """
-    """
     counter_submatrix = 0
     for row in range(rows - 1):
         for col in range(cols - 1):

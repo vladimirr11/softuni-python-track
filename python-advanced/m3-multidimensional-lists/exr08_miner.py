@@ -3,8 +3,6 @@ directions = input().split()
 
 
 def read_miner_field(rows):
-    """
-    """
     miner_field = []
     for _ in range(rows):
         field_entries = [x for x in input().split()]
@@ -14,8 +12,6 @@ def read_miner_field(rows):
 
 
 def find_start_position(miner_field):
-    """
-    """
     start_row, start_col = 0, 0
     for row_idx in range(len(miner_field)):
         for col_idx in range(len(miner_field[row_idx])):
@@ -26,8 +22,6 @@ def find_start_position(miner_field):
 
 
 def count_coals(miner_field):
-    """
-    """
     counter_coals = 0
     for r in range(len(miner_field)):
         for c in range(len(miner_field[0])):

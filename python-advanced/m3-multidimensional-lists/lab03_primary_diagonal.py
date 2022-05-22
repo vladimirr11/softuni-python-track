@@ -1,6 +1,4 @@
 def make_square_matrix(side):
-    """
-    """
     matrix = []
     for _ in range(side):
         values = [int(x) for x in input().split()]
@@ -10,8 +8,6 @@ def make_square_matrix(side):
 
 
 def find_primary_diagonal_sum_of_matrix(matrix):
-    """
-    """
     diagonal = []
     for i in range(len(matrix)):
         diagonal.append(matrix[i][i])

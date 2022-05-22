@@ -1,6 +1,4 @@
 def create_blank_matrix():
-    """
-    """
     num_rows, num_cols = list(map(int, input().split()))
 
     blank_matrix = []
@@ -11,8 +9,6 @@ def create_blank_matrix():
 
 
 def iterate_over_string(string, index):
-    """
-    """
     if index >= len(string):
         index = index % len(string)
 
@@ -20,8 +16,6 @@ def iterate_over_string(string, index):
 
 
 def fill_blank_matrix(blank_matrix):
-    """
-    """
     filling_string = input()
 
     LEN_ROWS = len(blank_matrix)

@@ -1,6 +1,4 @@
 def get_matrix_columns_sum():
-    """
-    """
     num_rows, num_cols = list(map(int, input().split(', ')))
 
     matrix = []

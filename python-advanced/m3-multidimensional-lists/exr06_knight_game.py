@@ -1,6 +1,4 @@
 def read_board():
-    """
-    """
     matrix = []
     n = int(input())
 
@@ -11,8 +9,6 @@ def read_board():
 
 
 def find_all_knights(matrix):
-    """
-    """
     positions = []
 
     for i in range(len(matrix)):
@@ -24,8 +20,6 @@ def find_all_knights(matrix):
 
 
 def knights_are_attacking_each_other(matrix):
-    """
-    """
     knight_positions = find_all_knights(matrix)
 
     for row, col in knight_positions:
@@ -55,8 +49,6 @@ def knights_are_attacking_each_other(matrix):
 
 
 def calculate_aggression(knight_positions, matrix):
-    """
-    """
     aggression_scores = dict()
 
     for row, col in knight_positions:
@@ -87,8 +79,6 @@ def calculate_aggression(knight_positions, matrix):
 
 
 def find_max_aggression(aggression_scores):
-    """
-    """
     max_so_far = None
     max_pos = 0
     for pos, aggression in aggression_scores.items():
@@ -100,8 +90,6 @@ def find_max_aggression(aggression_scores):
 
 
 def main():
-    """
-    """
     matrix = read_board()
 
     removed_knights = 0
