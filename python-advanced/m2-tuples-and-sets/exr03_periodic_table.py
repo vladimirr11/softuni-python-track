@@ -1,6 +1,4 @@
 def print_unique_chemicals(num):
-    """
-    """
     chemicals = set()
 
     for _ in range(num):

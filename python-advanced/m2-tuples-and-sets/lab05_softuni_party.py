@@ -1,6 +1,4 @@
 def register_softuni_guests():
-    """
-    """
     registered_guests = set()
     others = set()
 
@@ -25,8 +23,6 @@ def register_softuni_guests():
 
 
 def print_arrived_guests(arrived_guest):
-    """
-    """
     print(len(arrived_guest))
 
     return [print(guest) for guest in arrived_guest]

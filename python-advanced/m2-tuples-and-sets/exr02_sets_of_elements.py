@@ -11,8 +11,6 @@ for _ in range(m):
 
 
 def find_set_intersection(set_n: set, set_m: set):
-    """
-    """
     return set_n.intersection(set_m)
 
 

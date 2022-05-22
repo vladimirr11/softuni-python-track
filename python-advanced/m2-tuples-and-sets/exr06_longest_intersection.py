@@ -1,6 +1,7 @@
 N = int(input())
 
 intersections_list = []
+
 for i in range(N):
     (range_one, range_two) = input().split('-')
     (start_one, end_one), (start_two, end_two) = range_one.split(','), range_two.split(',')
@@ -14,8 +15,6 @@ for i in range(N):
 
 
 def find_longest_intersection(intersec_list: list):
-    """
-    """
     max_length = 0
     idx_max_length = 0
     for idx, sett in enumerate(intersec_list):

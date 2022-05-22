@@ -1,6 +1,4 @@
 def create_phonebook():
-    """
-    """
     phonebook = dict()
 
     num = 0

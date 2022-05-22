@@ -1,6 +1,4 @@
 def make_students_grades_dict():
-    """
-    """
     my_students_grades_dict = {}
 
     num_students = int(input())
@@ -17,14 +15,10 @@ def make_students_grades_dict():
 
 
 def average_grades(values):
-    """
-    """
     return sum(values) / len(values)
 
 
 def format_output_students_grades(students_grades_dict):
-    """
-    """
     for (student, grades) in students_grades_dict.items():
         avg_grade = average_grades([float(grade) for grade in grades])
         grades = ' '.join(f'{float(grade):.2f}' for grade in grades)

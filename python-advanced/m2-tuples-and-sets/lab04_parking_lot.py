@@ -1,12 +1,8 @@
 def get_input(num_in_out_cars):
-    """
-    """
     return [input().split(', ') for _ in range(num_in_out_cars)]
 
 
 def record_parking_lot(in_out_cars):
-    """"
-    """
     entered_car = set()
     left_cars = set()
 

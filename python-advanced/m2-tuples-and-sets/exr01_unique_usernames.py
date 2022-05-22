@@ -1,6 +1,4 @@
 def print_unique_username(num):
-    """
-    """
     usernames = set()
     for _ in range(num):
         username = input()
