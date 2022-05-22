@@ -1,8 +1,7 @@
 rows, _ = list(map(int, input().split(', ')))
 
+
 def sum_matrix_elements(rows):
-    """
-    """
     sum_matrix = 0
     matrix = []
     for _ in range(rows):

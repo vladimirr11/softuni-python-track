@@ -1,14 +1,9 @@
 def get_sides_of_matrix():
-    """
-    """
     num_rows, num_cols = list(map(int, input().split()))
-
     return (num_rows, num_cols)
 
 
 def create_matrix(sides):
-    """
-    """
     num_rows, _ = sides
 
     matrix = []
@@ -20,8 +15,6 @@ def create_matrix(sides):
 
 
 def print_max_sum_3x3_submatrix(matrix, start_row_idx, start_col_idx):
-    """
-    """
     for r in range(start_row_idx, start_row_idx + 3):
         for c in range(start_col_idx, start_col_idx + 3):
             print(matrix[r][c], end=' ')
@@ -29,8 +22,6 @@ def print_max_sum_3x3_submatrix(matrix, start_row_idx, start_col_idx):
 
 
 def find_max_sum_submatrix(matrix):
-    """
-    """
     LEN_ROWS = len(matrix)
     LEN_COLS = len(matrix[0])
     

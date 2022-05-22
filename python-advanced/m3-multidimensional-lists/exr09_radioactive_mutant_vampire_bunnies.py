@@ -2,8 +2,6 @@ rows, _ = list(map(int, input().split()))
 
 
 def read_lair(rows):
-    """
-    """
     lair = []
     for _ in range(rows):
         lair_entries = list(input())
@@ -13,8 +11,6 @@ def read_lair(rows):
 
 
 def find_player_possition(lair):
-    """
-    """
     (row, col) = 0, 0
     for row_idx in range(len(lair)):
         for col_idx in range(len(lair[row_idx])):
@@ -25,8 +21,6 @@ def find_player_possition(lair):
 
 
 def spread_the_bunnies(lair):
-    """
-    """
     for r in range(len(lair)):
         for c in range(len(lair[0])):
             if lair[r][c] == 'B':
@@ -68,8 +62,6 @@ def spread_the_bunnies(lair):
 
 
 def update_lair(lair):
-    """
-    """
     for r in range(len(lair)):
         for c in range(len(lair[0])):
             if lair[r][c] == 'C':

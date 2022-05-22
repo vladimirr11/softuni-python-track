@@ -1,6 +1,4 @@
 def find_symbol(matrix, symbol):
-    """
-    """
     n = len(matrix)
     for row in range(n):
         for col in range(n):

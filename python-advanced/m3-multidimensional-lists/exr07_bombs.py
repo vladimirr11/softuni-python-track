@@ -1,6 +1,4 @@
 def create_square_matrix(N):
-    """
-    """
     matrix = []
     for _ in range(N):
         values = list(map(int, input().split()))
@@ -10,16 +8,11 @@ def create_square_matrix(N):
 
 
 def get_bombs_coordinates():
-    """
-    """
     bombs_coordinates =[tuple(map(int, bomb.split(','))) for bomb in input().split()]
-
     return bombs_coordinates
 
 
 def kill_cells(matrix, coordinates):
-    """
-    """
     row_indx, col_indx = coordinates
     core_value = matrix[row_indx][col_indx]
     for r in range(row_indx - 1, row_indx + 2):
@@ -32,8 +25,6 @@ def kill_cells(matrix, coordinates):
 
 
 def detonate_bombs(matrix):
-    """
-    """
     bombs_coordinates = get_bombs_coordinates()
 
     LEN_SIDE_MATRIX = len(matrix)
@@ -48,8 +39,6 @@ def detonate_bombs(matrix):
 
 
 def print_result(matrix):
-    """
-    """
     count_live_cells = 0
     sum_live_cells = 0
     for r in range(len(matrix)):

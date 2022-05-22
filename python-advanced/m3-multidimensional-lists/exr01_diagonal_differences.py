@@ -1,6 +1,4 @@
 def read_square_matrix(side):
-    """
-    """
     matrix = []
     for _ in range(side):
         values = [int(x) for x in input().split()]
@@ -10,8 +8,6 @@ def read_square_matrix(side):
 
 
 def calculate_diagonal_differences(matrix):
-    """
-    """
     primary_diagonal = []
     for i in range(len(matrix)):
         primary_diagonal.append(matrix[i][i])
