@@ -1,6 +1,4 @@
 def fill_dictionary():
-    """
-    """
     numbers_dictionary = {}
 
     while True:
@@ -17,8 +15,6 @@ def fill_dictionary():
 
 
 def find_in_store(store):
-    """
-    """
     searched = input()
 
     while searched != 'Remove':
@@ -27,8 +23,6 @@ def find_in_store(store):
 
 
 def remove_from_store(numbers_dictionary):
-    """
-    """
     line = input()
     while line != 'End':
         searched = line

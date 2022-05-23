@@ -14,9 +14,7 @@ class InvalidDomainNameError(Exception):
     pass
 
 
-def validate_email(email):
-    """
-    """
+def validate_email(email: str):
     if '@' not in email:
         raise MustContainAtSymbolError('Email must contain @')
         
@@ -33,8 +31,6 @@ def validate_email(email):
 
 
 def main():
-    """
-    """
     while True:
         email = input()
         if email == 'End':
