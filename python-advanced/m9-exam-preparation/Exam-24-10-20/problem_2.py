@@ -1,6 +1,4 @@
 def read_matrix():
-    """
-    """
     matrix = []
     for _ in range(8):
         values = [x for x in input().split()]
@@ -15,38 +13,30 @@ queens_list = []
 
 
 def right_move(matrix, start_row_idx, start_col_idx):
-    """
-    """
-    for col in range(start_col_idx, len(matrix) -1):
+    for col in range(start_col_idx, len(matrix) - 1):
         if matrix[start_row_idx][col + 1] == 'Q':
             return
         elif matrix[start_row_idx][col + 1] == 'K':
-            return True 
+            return True
 
 
 def left_move(matrix, start_row_idx, start_col_idx):
-    """
-    """
     for col in range(start_col_idx, 1, -1):
         if matrix[start_row_idx][col - 1] == 'Q':
             return
         elif matrix[start_row_idx][col - 1] == 'K':
-            return True 
+            return True
 
-        
+
 def up_move(matrix, start_row_idx, start_col_idx):
-    """
-    """
     for row in range(start_row_idx, 1, -1):
         if matrix[row - 1][start_col_idx] == 'Q':
             return
         elif matrix[row - 1][start_col_idx] == 'K':
-            return True 
+            return True
 
 
 def down_move(matrix, start_row_idx, start_col_idx):
-    """
-    """
     for row in range(start_row_idx, len(matrix) - 1):
         if matrix[row + 1][start_col_idx] == 'Q':
             return
@@ -55,8 +45,6 @@ def down_move(matrix, start_row_idx, start_col_idx):
 
 
 def left_up_diagonal(matrix, start_row_idx, start_col_idx):
-    """
-    """    
     counter = 0
     for row in range(start_row_idx, 1, -1):
         counter += 1
@@ -68,10 +56,8 @@ def left_up_diagonal(matrix, start_row_idx, start_col_idx):
         elif matrix[row - 1][start_col_idx - counter] == 'K':
             return True
 
-        
+
 def left_down_diagonal(matrix, start_row_idx, start_col_idx):
-    """
-    """
     counter = 0
     for row in range(start_row_idx, len(matrix) - 1):
         counter += 1
@@ -85,9 +71,7 @@ def left_down_diagonal(matrix, start_row_idx, start_col_idx):
 
 
 def right_up_diagonal(matrix, start_row_idx, start_col_idx):
-    """
-    """ 
-    counter = 0 
+    counter = 0
     for row in range(start_row_idx, 1, -1):
         counter += 1
         if counter + start_col_idx == len(matrix):
@@ -100,8 +84,6 @@ def right_up_diagonal(matrix, start_row_idx, start_col_idx):
 
 
 def right_down_diagonal(matrix, start_row_idx, start_col_idx):
-    """
-    """
     counter = 0
     for row in range(start_row_idx, len(matrix) - 1):
         counter += 1
@@ -137,6 +119,6 @@ for row in range(len(matrix)):
 
 if not queens_list:
     print('The king is safe!')
-else: 
+else:
     for indices in queens_list:
         print(f'[{indices[0]}, {indices[1]}]')

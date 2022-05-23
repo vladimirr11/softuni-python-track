@@ -1,6 +1,4 @@
 def read_matrix():
-    """
-    """
     matrix = []
     for _ in range(5):
         values = [x for x in input().split()]
@@ -15,8 +13,6 @@ num_commands = int(input())
 
 
 def move(matrix, direction, steps):
-    """
-    """
     for row in range(len(matrix)):
         for col in range(len(matrix[0])):
             if matrix[row][col] == 'A':
@@ -53,8 +49,6 @@ def move(matrix, direction, steps):
 
 
 def valiadate_existing_targets(matrix):
-    """
-    """
     flag = False
     targets = 0
     for row in range(len(matrix)):
@@ -67,8 +61,6 @@ def valiadate_existing_targets(matrix):
 
 
 def shoot_target(matrix, direction):
-    """
-    """
     shotted_targets = []
     for row in range(len(matrix)):
         for col in range(len(matrix[0])):
@@ -94,7 +86,7 @@ def shoot_target(matrix, direction):
                             matrix[i][col] = '.'
                             shotted_targets.append((i, col))
                             break
-                
+
                 elif direction == 'down':
                     for i in range(row, len(matrix[0])):
                         if matrix[i][col] == 'x':
@@ -108,8 +100,6 @@ def shoot_target(matrix, direction):
 
 
 def execute_commands(num_commands, matrix):
-    """
-    """
     hitted_targets = []
     for _ in range(num_commands):
 
@@ -123,17 +113,19 @@ def execute_commands(num_commands, matrix):
         if command[0] == 'shoot':
             direction = command[1]
 
-            matrix, shotted_tagets, any_tagets_left, curr_num_targets = shoot_target(matrix, direction)
+            matrix, shotted_tagets, any_tagets_left, curr_num_targets = shoot_target(
+                matrix, direction)
 
             hitted_targets.extend(shotted_tagets)
 
             if any_tagets_left == False:
-                print(f'Training completed! All {len(hitted_targets)} targets hit.')
+                print(
+                    f'Training completed! All {len(hitted_targets)} targets hit.')
                 for hitted_target in hitted_targets:
                     print(f'[{hitted_target[0]}, {hitted_target[1]}]')
 
                 return
-    
+
     print(f'Training not completed! {curr_num_targets} targets left.')
     for pos in shotted_tagets:
         print(f'[{pos[0]}, {pos[1]}]')

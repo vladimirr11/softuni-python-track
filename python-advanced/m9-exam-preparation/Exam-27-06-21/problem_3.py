@@ -1,8 +1,6 @@
 def math_operations(*args, a=None, s=None, d=None, m=None):
-    """
-    """
     kwargs_dict = {
-        'a': a,'s': s,'d': d,'m': m,
+        'a': a, 's': s, 'd': d, 'm': m,
     }
 
     hellper_dict = {
@@ -16,7 +14,7 @@ def math_operations(*args, a=None, s=None, d=None, m=None):
             id = 1
 
         curr_kwarg_pos = hellper_dict[id]
-        
+
         if curr_kwarg_pos == 'a':
             kwargs_dict[curr_kwarg_pos] += arg
         elif curr_kwarg_pos == 's':
@@ -28,8 +26,7 @@ def math_operations(*args, a=None, s=None, d=None, m=None):
                 kwargs_dict[curr_kwarg_pos] /= arg
         elif curr_kwarg_pos == 'm':
             kwargs_dict[curr_kwarg_pos] *= arg
-        
-        
+
     return kwargs_dict
 
 

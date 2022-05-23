@@ -12,8 +12,6 @@ matrix = read_matrix(wonderland_size)
 
 
 def make_move(matrix, start_row, start_col, command):
-    """
-    """
     if command == 'right':
         if start_col + 1 >= len(matrix):
             return 'out of field'
@@ -22,7 +20,7 @@ def make_move(matrix, start_row, start_col, command):
         else:
             value = matrix[start_row][start_col + 1]
             return (start_row, start_col + 1, value)
-    
+
     if command == 'left':
         if start_col - 1 < 0:
             return 'out of field'
@@ -31,7 +29,7 @@ def make_move(matrix, start_row, start_col, command):
         else:
             value = matrix[start_row][start_col - 1]
             return (start_row, start_col - 1, value)
-    
+
     if command == 'up':
         if start_row - 1 < 0:
             return 'out of field'

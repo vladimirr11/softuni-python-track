@@ -1,6 +1,4 @@
 def fill_the_box(height, length, width, *args):
-    """
-    """
     box_dimensions = height * length * width
 
     count_cubes_in_box = box_dimensions
@@ -14,10 +12,10 @@ def fill_the_box(height, length, width, *args):
     for arg in args:
         if arg == 'Finish':
             return f'There is free space in the box. You could put {count_cubes_in_box} more cubes.'
-        
+
         if count_cubes_in_box - int(arg) < 0:
             return f'No more free space! You have {total_cubes - box_dimensions} more cubes.'
-        
+
         count_cubes_in_box -= int(arg)
 
 

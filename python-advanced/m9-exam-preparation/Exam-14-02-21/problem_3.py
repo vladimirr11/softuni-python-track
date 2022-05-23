@@ -1,6 +1,4 @@
 def stock_availability(inventory_list: list, command, *args):
-    """
-    """
     if command == 'delivery' and args:
         for x in args:
             inventory_list.append(x)
@@ -22,15 +20,20 @@ def stock_availability(inventory_list: list, command, *args):
 
     elif command == 'sell':
         del inventory_list[0]
-    
+
     return inventory_list
-        
+
 
 if __name__ == '__main__':
-    print(stock_availability(["choco", "vanilla", "banana"], "delivery", "caramel", "berry"))
-    print(stock_availability(["chocolate", "vanilla", "banana"], "delivery", "cookie","banana"))
+    print(stock_availability(
+        ["choco", "vanilla", "banana"], "delivery", "caramel", "berry"))
+    print(stock_availability(["chocolate", "vanilla",
+          "banana"], "delivery", "cookie", "banana"))
     print(stock_availability(["chocolate", "vanilla", "banana"], "sell"))
     print(stock_availability(["chocolate", "vanilla", "banana"], "sell", 3))
-    print(stock_availability(["chocolate", "chocolate", "banana"], "sell", "chocolate"))
-    print(stock_availability(["cookie", "chocolate", "banana"], "sell", "chocolate"))
-    print(stock_availability(["chocolate", "vanilla", "banana"], "sell", "cookie"))
+    print(stock_availability(
+        ["chocolate", "chocolate", "banana"], "sell", "chocolate"))
+    print(stock_availability(
+        ["cookie", "chocolate", "banana"], "sell", "chocolate"))
+    print(stock_availability(
+        ["chocolate", "vanilla", "banana"], "sell", "cookie"))

@@ -8,8 +8,6 @@ symbols = deque(input().split())
 
 
 def calculate_honey(bee_value, nectar_value, symbol):
-    """
-    """
     if symbol == '+':
         return abs(bee_value + nectar_value)
     elif symbol == '-':
@@ -34,15 +32,15 @@ while len(working_bees) > 0 and len(nectar) > 0:
             break
 
         continue
-    
+
     curr_symbol = symbols.popleft()
 
-    total_honey_made += calculate_honey(curr_bee_value, curr_nectar_value, curr_symbol)
+    total_honey_made += calculate_honey(curr_bee_value,
+                                        curr_nectar_value, curr_symbol)
 
     del curr_bee_value
     del curr_nectar_value
     del curr_symbol
-
 
 
 print(f'Total honey made: {total_honey_made}')

@@ -2,13 +2,11 @@ from collections import deque
 
 
 def best_list_pureness(numbers_list: list, k: int):
-    """
-    """
     pureness_list = []
 
     numbers_deque = deque(numbers_list)
     for _ in range(k + 1):
-        curr_pureness = 0    
+        curr_pureness = 0
         for (idx, num) in enumerate(numbers_deque):
             curr_pureness += idx * num
 

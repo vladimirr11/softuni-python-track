@@ -13,7 +13,7 @@ while True:
     cup_of_milk = cups_of_milks.popleft()
 
     if choco <= 0:
-        cups_of_milks.appendleft(cup_of_milk) 
+        cups_of_milks.appendleft(cup_of_milk)
         continue
 
     if cup_of_milk <= 0:
