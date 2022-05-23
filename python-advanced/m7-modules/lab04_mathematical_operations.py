@@ -2,8 +2,6 @@ from lab.math_operation import add, multiply, subtract, divide
 
 
 def perform_math_operation(inp):
-    """
-    """
     fn, sign, sn = inp.split()
 
     result = 0

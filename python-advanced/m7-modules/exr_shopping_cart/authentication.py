@@ -8,15 +8,11 @@ from exr_shopping_cart.helpers import clear_screen
 
 
 def register(**user):
-    """
-    """
     with open(os.path.join('db', 'user_store.txt'), 'a') as file:
         file.write(f"{user['username']} - {user['password']}\n")
 
 
 def render_register(screen: tk.Tk, on_success):
-    """
-    """
     clear_screen(screen)
 
     inputs = [
@@ -31,8 +27,6 @@ def render_register(screen: tk.Tk, on_success):
 
 
     def on_click():
-        """
-        """
         error = register(**{user_attr: widget.get() for (user_attr, widget) in inputs})
         if not error:
             clear_screen(screen)
@@ -45,8 +39,6 @@ def render_register(screen: tk.Tk, on_success):
 
 
 def login(username, password):
-    """
-    """
     with open(os.path.join('db', 'user_store.txt')) as file:
         for row in file:
             user = json.loads(row)
@@ -59,8 +51,6 @@ def login(username, password):
 
 
 def render_login(screen: tk.Tk, on_success):
-    """
-    """
     clear_screen(screen)
     username = tk.Entry(screen)
     username.grid(row=0, column=0)
@@ -68,8 +58,6 @@ def render_login(screen: tk.Tk, on_success):
     password.grid(row=1, column=0)
 
     def on_click():
-        """
-        """
         if login(username.get(), password.get()):
             on_success(screen)
         else:

@@ -7,8 +7,6 @@ from exr_shopping_cart.authentication import render_register, render_login
 from exr_shopping_cart.products import render_products
 
 def render_main_screen(screen: tk.Tk):
-    """
-    """
     tk.Button(screen, text='Login', background='green', foreground='white',
               command=lambda: render_login(screen, on_success=lambda: print('Login successful'))).grid(row=0, column=0)
 
