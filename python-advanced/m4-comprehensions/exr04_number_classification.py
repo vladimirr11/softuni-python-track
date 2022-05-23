@@ -1,8 +1,7 @@
 numbers = [int(x) for x in input().split(', ')]
 
+
 def sort_numbers(numbers):
-    """
-    """
     possitive = [x for x in numbers if x >= 0]
     negative = [x for x in numbers if x < 0]
     even = [x for x in numbers if x % 2 == 0]

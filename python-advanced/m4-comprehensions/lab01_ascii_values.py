@@ -1,6 +1,4 @@
-def create_ascii_dict(chars):
-    """
-    """
+def create_ascii_dict(chars: str):
     characters = chars.split(', ')
     char_ascii_dict = {char: ord(char) for char in characters}
 

@@ -1,6 +1,4 @@
 def print_country_capital_pairs(countries, capitals):
-    """
-    """
     countries = [country for country in countries.split(', ')]
     capitals = [capital for capital in capitals.split(', ')]
 

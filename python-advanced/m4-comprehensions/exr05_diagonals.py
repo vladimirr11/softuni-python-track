@@ -1,6 +1,4 @@
 def find_square_matrix_diagonals_sums(square_side):
-    """
-    """
     matrix_values = [[int(v) for v in input().split(', ')] for _ in range(square_side)]
 
     prime_diagonal_values = [matrix_values[i][i] for i in range(len(matrix_values))]

@@ -14,7 +14,7 @@ while line != 'END':
 
     if command == 'Add':
         matrix[row][col] += value
-    
+
     elif command == 'Subtract':
         matrix[row][col] -= value
 

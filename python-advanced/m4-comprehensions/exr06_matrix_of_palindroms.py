@@ -2,8 +2,6 @@ n, m = list(map(int, input().split()))
 
 
 def create_palindrome_matrix(n, m):
-    """
-    """
     matrix = []
     base = ord('a')
     for row in range(n):

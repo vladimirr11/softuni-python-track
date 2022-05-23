@@ -8,7 +8,7 @@ while line != 'End':
 
     if item_name not in inventory[hero]:
         inventory[hero][item_name] = int(item_cost)
-    
+
     line = input()
 
 
