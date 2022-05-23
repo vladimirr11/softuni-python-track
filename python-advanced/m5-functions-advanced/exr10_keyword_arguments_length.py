@@ -1,6 +1,4 @@
-def kwargs_length(**kwargs):
-    """
-    """
+def kwargs_length(**kwargs: dict):
     return len(kwargs)
     
 

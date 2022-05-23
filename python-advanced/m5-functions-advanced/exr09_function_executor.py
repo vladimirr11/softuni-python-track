@@ -1,10 +1,8 @@
-def func_executor(*args):
-    """
-    """
+def func_executor(*args: tuple) -> list:
     result = []
     for (func, fargs) in args:
         result.append(func(*fargs))
-    
+
     return result
 
 

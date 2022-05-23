@@ -1,6 +1,4 @@
 def print_comb(text, idx):
-    """
-    """
     if idx >= len(text):
         print(''.join(text))
         return

@@ -1,6 +1,4 @@
-def age_assignment(*args, **kwargs):
-    """
-    """
+def age_assignment(*args: tuple, **kwargs: dict):
     name_age_dict = {}
     for name in args:
         if name[0] in kwargs and name not in name_age_dict:

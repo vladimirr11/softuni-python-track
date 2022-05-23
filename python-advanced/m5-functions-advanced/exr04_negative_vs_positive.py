@@ -1,6 +1,4 @@
 def find_stronger_numbers(numbers):
-    """
-    """
     lst_of_numbers = [int(num) for num in numbers.split()]
 
     negative_numbers = []

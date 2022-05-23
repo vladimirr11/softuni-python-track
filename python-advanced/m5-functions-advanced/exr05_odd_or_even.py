@@ -1,6 +1,4 @@
 def get_odd_or_even_sum(command, numbers):
-    """
-    """
     nums = [int(x) for x in numbers.split()]
     odd_sum, even_sum = (0, 0)
     if command == 'Odd':

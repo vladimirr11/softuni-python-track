@@ -1,6 +1,4 @@
 def expressions(numbers, current_result=0, current_expression=''):
-    """
-    """
     if not numbers:
         print(f'{current_expression}={current_result}')
         return 

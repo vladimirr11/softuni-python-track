@@ -1,6 +1,4 @@
 def multiply(*nums):
-    """
-    """
     numbers = [int(num) for num in nums]
     
     result = 1

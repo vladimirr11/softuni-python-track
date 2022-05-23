@@ -1,6 +1,4 @@
 def sort_numbers(nums):
-    """
-    """
     return [int(x) for x in sorted(nums)]
 
 

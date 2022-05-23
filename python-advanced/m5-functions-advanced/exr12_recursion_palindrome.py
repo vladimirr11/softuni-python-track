@@ -1,6 +1,4 @@
 def palindrome(word, indx):
-    """
-    """
     if len(word) // 2 == indx:
             return f'{word} is a palindrome'
     if word[indx] != word[len(word) - 1 - indx]:

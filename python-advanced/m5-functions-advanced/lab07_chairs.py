@@ -2,9 +2,7 @@ names = input().split(', ')
 size = int(input())
 
 
-def people_combinations(names, size, result = []):
-    """
-    """
+def people_combinations(names: list, size, result = []):
     if len(result) == size:
         print(', '.join(result))
         return
