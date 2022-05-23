@@ -10,12 +10,12 @@ while True:
         file_name = command[1]
         with open(file_name, 'w') as file:
             file.write('')
-        
+
     elif command[0] == 'Add':
         file_name, content = command[1], command[2]
         with open(file_name, 'a') as file:
             file.write(content + '\r\n')
-    
+
     elif command[0] == 'Replace':
         file_name, old_str, new_str = command[1], command[2], command[3]
         if os.path.exists(file_name):
@@ -27,11 +27,10 @@ while True:
                 file.write(content)
         else:
             print('An error occured')
-    
+
     elif command[0] == 'Delete':
         file_name = command[1]
         if os.path.exists(file_name):
             os.remove(file_name)
         else:
             print('An error occured')
-            

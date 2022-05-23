@@ -1,6 +1,4 @@
 def reverse_even_line_words(file_path, mode):
-    """"
-    """
     with open(file_path, mode) as file:
         for idx, line in enumerate(file):
             if idx % 2 == 0:
