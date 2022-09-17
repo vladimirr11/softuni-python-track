@@ -2,8 +2,6 @@ x = 'global'
 
 
 def outer():
-    """
-    """
     x = 'local'
 
     def inner():
@@ -20,7 +18,8 @@ def outer():
     inner()
     print('outer:', x)
     change_global()
-    
 
-print(x)
-outer()
+
+if __name__ == '__main__':
+    print(x)
+    outer()

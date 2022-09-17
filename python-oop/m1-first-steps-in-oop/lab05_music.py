@@ -3,15 +3,16 @@ class Music:
         self.title = title
         self.artist = artist
         self.lyrics = lyrics
-    
+
     def print_info(self):
         return f'This is "{self.title}" from "{self.artist}"'
-    
+
     def play(self):
         return self.lyrics
 
 
-music = Music("Whiplash", "Metallica", "Late at night, all systems go")
+if __name__ == '__main__':
+    music = Music("Whiplash", "Metallica", "Late at night, all systems go")
 
-print(music.print_info())
-print(music.play())
+    print(music.print_info())
+    print(music.play())
