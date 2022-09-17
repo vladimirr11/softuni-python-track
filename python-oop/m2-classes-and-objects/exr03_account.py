@@ -1,9 +1,9 @@
 class Account:
-    def __init__(self, id: int, name: str, balance = 0) -> None:
+    def __init__(self, id: int, name: str, balance=0) -> None:
         self.id = id
         self.name = name
         self.balance = balance
-    
+
     def credit(self, amount):
         self.balance += amount
         return self.balance
@@ -12,16 +12,16 @@ class Account:
         if amount <= self.balance:
             self.balance -= amount
             return self.balance
-        
+
         return 'Amount exceeded balance'
-    
+
     def info(self):
         return f'User {self.name} with account {self.id} has {self.balance} balance'
 
 
-account = Account(5411256, 'Peter')
-
-print(account.debit(500))
-print(account.credit(1000))
-print(account.debit(500))
-print(account.info())
+if __name__ == '__main__':
+    account = Account(5411256, 'Peter')
+    print(account.debit(500))
+    print(account.credit(1000))
+    print(account.debit(500))
+    print(account.info())

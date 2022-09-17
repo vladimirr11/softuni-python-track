@@ -15,7 +15,7 @@ class Time:
         self.seconds = seconds
 
     def get_time(self):
-        return f'{str(self.hours).zfill(2)}:{str(self.minutes).zfill(2)}:{str(self.seconds).zfill(2)}' 
+        return f'{str(self.hours).zfill(2)}:{str(self.minutes).zfill(2)}:{str(self.seconds).zfill(2)}'
 
     def next_second(self):
         if Time.max_seconds > self.seconds:
@@ -37,15 +37,13 @@ class Time:
             return self.get_time()
 
 
-time = Time(9, 30, 58)
+if __name__ == '__main__':
+    time = Time(9, 30, 58)
+    print(time.get_time())
+    print(time.next_second())
 
-print(time.get_time())
-print(time.next_second())
+    time = Time(10, 59, 59)
+    print(time.next_second())
 
-time = Time(10, 59, 59)
-
-print(time.next_second())
-
-time = Time(23, 59, 59)
-
-print(time.next_second())
+    time = Time(23, 59, 59)
+    print(time.next_second())
