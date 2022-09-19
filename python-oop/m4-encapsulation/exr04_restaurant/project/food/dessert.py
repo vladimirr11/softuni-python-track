@@ -9,4 +9,3 @@ class Dessert(Food):
     @property
     def calories(self):
         return self.__calories
-            

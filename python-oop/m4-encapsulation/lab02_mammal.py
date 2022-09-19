@@ -1,12 +1,12 @@
 class Mammal:
-    
+
     __kingdom = 'animals'
 
     def __init__(self, name, type, sound) -> None:
         self.name = name
         self.type = type
         self.sound = sound
-    
+
     def make_sound(self):
         return f'{self.name} makes {self.sound}'
 
@@ -18,7 +18,6 @@ class Mammal:
 
 
 if __name__ == '__main__':
-
     mammal = Mammal('Dog', 'Domestic', 'Bark')
     print(mammal.make_sound())
     print(mammal.get_kingdom())

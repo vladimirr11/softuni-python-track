@@ -33,4 +33,3 @@ if __name__ == '__main__':
     print(email_validator.validate("georgios@gmail.net"))
     print(email_validator.validate("stamatito@abv.net"))
     print(email_validator.validate("abv@softuni.bg"))
-    

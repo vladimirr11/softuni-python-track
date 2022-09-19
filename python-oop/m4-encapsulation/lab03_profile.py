@@ -11,7 +11,7 @@ class Profile:
     def username(self, value):
         if len(value) < 5 or len(value) > 15:
             raise ValueError('The username must be between 5 and 15 characters.')
-        
+
         self.__username = value
 
     @property
@@ -21,19 +21,20 @@ class Profile:
     @password.setter
     def password(self, value):
         if self.is_password_required_length(value) \
-            and self.is_password_contain_uppercase_letter(value) \
-            and self.is_password_contain_digit(value):
+                and self.is_password_contain_uppercase_letter(value) \
+                and self.is_password_contain_digit(value):
 
-    	    self.__password = value
+            self.__password = value
         else:
-            raise ValueError('The password must be 8 or more characters with at least 1 digit and 1 uppercase letter.')        
+            raise ValueError(
+                'The password must be 8 or more characters with at least 1 digit and 1 uppercase letter.')
 
     def is_password_required_length(self, password):
         return len(password) >= 8
-    
+
     def is_password_contain_uppercase_letter(self, password):
         uppercase_letters = [ch for ch in password if ch.isupper()]
-    
+
         return True if uppercase_letters else False
 
     def is_password_contain_digit(self, password):
@@ -50,5 +51,5 @@ if __name__ == '__main__':
 
     # profile_with_invalid_username = Profile('Too_long_username', 'Any')
 
-    correct_profile = Profile('Username','Passw0rd')
+    correct_profile = Profile('Username', 'Passw0rd')
     print(correct_profile)

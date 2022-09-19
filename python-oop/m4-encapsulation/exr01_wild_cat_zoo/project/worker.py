@@ -6,4 +6,3 @@ class Worker:
 
     def __repr__(self) -> str:
         return f'Name: {self.name}, Age: {self.age}, Salary: {self.salary}'
-        

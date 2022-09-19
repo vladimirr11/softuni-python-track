@@ -15,4 +15,3 @@ if __name__ == '__main__':
     print(person.get_name())
     print(person.get_age())
     print(person._Person__age)
-    
