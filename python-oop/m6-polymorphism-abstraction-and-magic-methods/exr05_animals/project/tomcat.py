@@ -1,12 +1,14 @@
-from exr05_animals.project.animal import Animal
+import sys, os
+sys.path.insert(0, os.getcwd())
+from exr05_animals.project.cat import Cat
 
 
-class Cat(Animal):
-    def __init__(self, name, age, gender) -> None:
+class Tomcat(Cat):
+    def __init__(self, name, age, gender='Male') -> None:
         super().__init__(name, age, gender)
 
     def make_sound(self):
-        return 'Meow meow!'
+        return 'Hiss'
     
     def __repr__(self) -> str:
         return f'This is {self.name}. {self.name} is a {self.age} year old {self.gender} {type(self).__name__}'

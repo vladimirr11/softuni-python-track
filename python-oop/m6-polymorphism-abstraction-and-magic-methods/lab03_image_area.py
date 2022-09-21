@@ -2,16 +2,16 @@ class ImageArea:
     def __init__(self, width, height) -> None:
         self.width = width
         self.height = height
-    
+
     def get_area(self):
         return self.width * self.height
-    
+
     def __gt__(sefl, other):
         return sefl.get_area() > other.get_area()
-    
+
     def __ge__(sefl, other):
         return sefl.get_area() >= other.get_area()
-    
+
     def __eq__(sefl, other):
         return sefl.get_area() == other.get_area()
 
@@ -25,4 +25,3 @@ if __name__ == '__main__':
     print(a1 != a3)
 
     print(dir(ImageArea))
-    

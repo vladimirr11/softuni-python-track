@@ -24,7 +24,7 @@ class Animal(ABC):
     def feed(self, food):
         if not isinstance(food, self._ALLOWED_FOODS):
             return f'{self.__class__.__name__} does not eat {food.__class__.__name__}!'
-        
+
         self.weight += self._WEIGHT_GAINED_PER_FOOD * food.quantity
         self.food_eathen += food.quantity
 
@@ -42,6 +42,6 @@ class Mammal(Animal, ABC):
     def __init__(self, name, weight, living_region) -> None:
         super().__init__(name, weight)
         self.living_region: str = living_region
-    
+
     def __repr__(self) -> str:
         return f'{self.__class__.__name__} [{self.name}, {self.weight}, {self.living_region}, {self.food_eathen}]'

@@ -38,10 +38,8 @@ class WarRobot(Robot):
 
 
 def number_of_robot_sensors(robot):
-    """
-    """
     print(robot.sensors_amount())
-    
+
 
 if __name__ == '__main__':
     basic_robot = Robot('Robo')

@@ -1,12 +1,12 @@
-from exr05_animals.project.cat import Cat
+from exr05_animals.project.animal import Animal
 
 
-class Kitten(Cat):
-    def __init__(self, name, age, gender='Female') -> None:
+class Cat(Animal):
+    def __init__(self, name, age, gender) -> None:
         super().__init__(name, age, gender)
 
     def make_sound(self):
-        return 'Meow'
-    
+        return 'Meow meow!'
+
     def __repr__(self) -> str:
         return f'This is {self.name}. {self.name} is a {self.age} year old {self.gender} {type(self).__name__}'

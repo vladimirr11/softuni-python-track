@@ -20,7 +20,8 @@ class Car(Vehicle):
         self.fuel_consumption = fuel_consumption
 
     def drive(self, distance):
-        needed_fuel_to_drive = distance * (self.fuel_consumption + __class__.ADD_CONSUMPTION)
+        needed_fuel_to_drive = distance * \
+            (self.fuel_consumption + __class__.ADD_CONSUMPTION)
         if needed_fuel_to_drive < self.fuel_quantity:
             self.fuel_quantity -= needed_fuel_to_drive
 
@@ -41,7 +42,8 @@ class Truck(Vehicle):
         self.fuel_consumption = fuel_consumption
 
     def drive(self, distance):
-        needed_fuel_to_drive = distance * (self.fuel_consumption + __class__.ADD_CONSUMPTION)
+        needed_fuel_to_drive = distance * \
+            (self.fuel_consumption + __class__.ADD_CONSUMPTION)
         if needed_fuel_to_drive < self.fuel_quantity:
             self.fuel_quantity -= needed_fuel_to_drive
 
@@ -51,11 +53,11 @@ class Truck(Vehicle):
         self.fuel_quantity += (fuel * 0.95)
 
         return self.fuel_quantity
-        
+
 
 if __name__ == '__main__':
     car = Car(20, 5)
-    
+
     car.drive(3)
     print(car.fuel_quantity)
     car.refuel(10)
