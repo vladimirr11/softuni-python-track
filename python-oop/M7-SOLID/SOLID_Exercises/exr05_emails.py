@@ -60,18 +60,14 @@ class Email(IEmail):
     def __repr__(self):
         template = "Sender: {sender}\nReceiver: {receiver}\nContent:\n{content}"
 
-        return template.format(sender = self.__sender, receiver = self.__receiver, content = self.__content)
+        return template.format(sender=self.__sender, receiver=self.__receiver, content=self.__content)
 
 
 if __name__ == '__main__':
     email = Email('IM')
-
     email.set_sender('qmal')
     email.set_receiver('james')
 
     content = MyContent('Hello, there!')
-
     email.set_content(content)
-
     print(email)
-    

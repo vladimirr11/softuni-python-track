@@ -7,7 +7,7 @@ class Robot(ABC):
 
     def get_type(self):
         return self.type
-    
+
     @abstractmethod
     def senzors_count(self):
         ...

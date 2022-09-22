@@ -52,7 +52,8 @@ class Manager:
         if 'AbstractWorker' in [w.__name__ for w in worker.__class__.__mro__]:
             self.worker = worker
         else:
-            raise AssertionError('`worker` must be of type {}'.format(AbstractWorker))
+            raise AssertionError(
+                '`worker` must be of type {}'.format(AbstractWorker))
 
 
 class WorkManager(Manager):
@@ -72,7 +73,6 @@ class Robot(AbstractWorker):
 
 if __name__ == '__main__':
     work_manager = WorkManager()
-
     break_manager = BreakManager()
 
     work_manager.set_worker(Worker())
@@ -85,7 +85,7 @@ if __name__ == '__main__':
     break_manager.lunch_break()
     work_manager.set_worker(Robot())
     work_manager.manage()
-    
+
     try:
         break_manager.set_worker(Robot())
         break_manager.lunch_break()

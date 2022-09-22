@@ -6,7 +6,7 @@ class Book:
 
 
 class Library:
-    def __init__(self, location, books = []) -> None:
+    def __init__(self, location, books=[]) -> None:
         self.books = books
         self.location = location
 
@@ -15,7 +15,7 @@ class Library:
         if requested_book:
             return requested_book[0]
         return 'some massage'
-    
+
     def add_book(self, book):
         if book not in self.books:
             self.books.append(book)
