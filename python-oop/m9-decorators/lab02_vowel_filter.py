@@ -8,7 +8,6 @@ def vowel_filter(func):
 
 
 if __name__ == '__main__':
-
     @vowel_filter
     def get_letters():
         return ['a', 'b', 'c', 'd', 'e']

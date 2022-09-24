@@ -15,5 +15,4 @@ if __name__ == '__main__':
         return num * 2
 
     print(times2(2)) 
-
     print(times2('Not A Number'))

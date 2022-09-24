@@ -1,13 +1,12 @@
 import time
 
+
 def exec_time(func):
     def wrapper(*args, **kwargs):
         start = time.time()
         func(*args, **kwargs)
         stop = time.time()
-        
         return stop - start
-    
     return wrapper
 
 

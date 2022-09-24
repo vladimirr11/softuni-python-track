@@ -24,4 +24,3 @@ if __name__ == '__main__':
 
     say_hi("Peter")
     say_bye("Peter")
-    
