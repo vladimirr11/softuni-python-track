@@ -1,9 +1,7 @@
 import sys, os
-sys.path.insert(0, os.getcwd())
-
-from lab.cat import Cat
-
 import unittest
+sys.path.insert(0, os.getcwd())
+from lab.cat import Cat
 
 
 class CatTests(unittest.TestCase):
@@ -34,10 +32,8 @@ class CatTests(unittest.TestCase):
 
     def test_cat_not_sleepy_after_sleep(self):
         cat = Cat('chocho')
-
         cat.eat()
         cat.sleep()
-
         self.assertFalse(cat.sleepy)
 
 

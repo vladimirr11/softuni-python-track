@@ -1,9 +1,7 @@
 import sys, os
-sys.path.insert(0, os.getcwd())
-
-from lab.intiger_list import IntegerList
-
 import unittest
+sys.path.insert(0, os.getcwd())
+from lab.intiger_list import IntegerList
 
 
 class IntegerListTests(unittest.TestCase):

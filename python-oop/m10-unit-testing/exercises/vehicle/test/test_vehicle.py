@@ -1,10 +1,7 @@
-# import sys, os
-# sys.path.insert(0, os.getcwd())
-
-# from exercises.vehicle.project.vehicle import Vehicle
-from project.vehicle import Vehicle
-
+import sys, os
 import unittest
+sys.path.insert(0, os.getcwd())
+from exercises.vehicle.project.vehicle import Vehicle
 
 
 class TestVehicle(unittest.TestCase):

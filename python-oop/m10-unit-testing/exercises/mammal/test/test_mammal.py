@@ -1,10 +1,8 @@
-# import sys, os
-# sys.path.insert(0, os.getcwd())
-
-# from exercises.mammal.project.mammal import Mammal
-from project.mammal import Mammal
-
+import sys, os
 import unittest
+sys.path.insert(0, os.getcwd())
+
+from exercises.mammal.project.mammal import Mammal
 
 
 class TestMammal(unittest.TestCase):

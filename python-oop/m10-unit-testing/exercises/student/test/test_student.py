@@ -1,11 +1,8 @@
-# import sys, os
-# from unittest import result
-# sys.path.insert(0, os.getcwd())
-
-# from exercises.student.project.student import Student
-from project.student import Student
-
+import sys, os
 import unittest
+sys.path.insert(0, os.getcwd())
+
+from exercises.student.project.student import Student
 
 
 class TestStudent(unittest.TestCase):

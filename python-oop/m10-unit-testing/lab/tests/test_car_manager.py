@@ -1,9 +1,8 @@
 import sys, os
+import unittest
 sys.path.insert(0, os.getcwd())
 
 from lab.car_manager import Car
-
-import unittest
 
 
 class CarTests(unittest.TestCase):
